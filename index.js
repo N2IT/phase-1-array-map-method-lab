@@ -20,8 +20,9 @@ function titleCased() {
   return capitalizedWords
 }
 
-// const titleCased = tutorials.map((words) => {
-//   return words[0].toUpperCase() + words.slice(1);
-// });
-
-//now need to capitalize the first letter of every
+//const capitalizeWords via the map function completes the for loop native to map() and assigns variable to characters within each string of the array tutorials
+//word.split (" ") splits the string into an array of substrings ['what', 'does', 'this', 'keyword', 'mean?']
+//.map((w) => w[0].toUpperCase()) assigns variable 'w' to each substring element; 
+//w[0].toUpperCase adds a new character to the beginning of the substring; ['Wwhat', 'Ddoes', 'Tthis', 'Kkeyword', 'Mmean?']
+// + w.slice(1) removes the second character of each substring
+//.join(" ") - concactenates all elements within an array into a string separated by a 'space' 
