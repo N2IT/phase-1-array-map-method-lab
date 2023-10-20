@@ -11,6 +11,17 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
+//This capitalizes the first word of each array
+function titleCased() {
+  const capitalizedWords = tutorials.map((word) => {
+    debugger
+    return word.split(" ").map((w) => w[0].toUpperCase() + w.slice(1)).join(" ");
+  })
+  return capitalizedWords
 }
+
+// const titleCased = tutorials.map((words) => {
+//   return words[0].toUpperCase() + words.slice(1);
+// });
+
+//now need to capitalize the first letter of every
